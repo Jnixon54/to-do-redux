@@ -4,25 +4,21 @@ import './App.css';
 import ToggleBar from './components/ToggleBar/ToggleBar';
 import TaskList from './components/TaskList/TaskList';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      userInput: '',
-      itemsToDisplay: 'All'
-      
-    }
-    
-  }
+import { connect } from 'react-redux';
 
+class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="todo-list">
         <ToggleBar />
-        <TaskList tasks={this.props.tasks}/>
+        <TaskList/>
       </div>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state){
+  return state;
+}
+
+export default connect(mapStateToProps)(App);

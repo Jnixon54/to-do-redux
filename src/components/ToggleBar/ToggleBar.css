@@ -1,0 +1,16 @@
+.toggle-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100% + 40px);
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgb(233, 58, 58);
+  font: 400 24px 'Lobster', sans-serif;
+  
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}

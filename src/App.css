@@ -1,8 +1,10 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.todo-list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: calc(100% - 40px);
+  background-color: #ecf0f1;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  max-width: calc(100% - 20px);
 }

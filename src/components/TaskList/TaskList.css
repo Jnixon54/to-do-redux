@@ -1,0 +1,6 @@
+.task-list {
+  display: flex;
+  flex-direction: column-reverse;
+  width: calc(100% - 40px);
+  align-items: center;
+}
